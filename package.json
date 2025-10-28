@@ -1,0 +1,28 @@
+{
+  "name": "kaihi-proxy",
+  "version": "1.0.0",
+  "description": "Production-grade secure proxy server for whitelisted domains",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "http-proxy-middleware": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "author": "Shinniam",
+  "license": "MIT"
+}
